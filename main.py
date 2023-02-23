@@ -17,6 +17,7 @@ if __name__ == '__main__':
             summary_str = f"Student Answer: {answer}"
         except ValueError:
             answer = None
+            summary_str = f"Student answer is not number"
         if (answer == result):
             answer_str = f"Answer: {result}; Status: CORRECT"
             print(summary_str + "; " + answer_str)
